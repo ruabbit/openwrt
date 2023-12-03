@@ -81,6 +81,13 @@ define U-Boot/rock-pi-e-rk3328
     radxa_rock-pi-e
 endef
 
+define U-Boot/doornet1-rk3328
+  BUILD_SUBTARGET:=armv8
+  NAME:=DoorNet1
+  BUILD_DEVICES:= \
+    embedfire_doornet1
+endef
+
 # RK3399 boards
 
 define U-Boot/rk3399/Default
@@ -154,7 +161,8 @@ UBOOT_TARGETS := \
   rock64-rk3328 \
   rock-pi-e-rk3328 \
   nanopi-r5c-rk3568 \
-  nanopi-r5s-rk3568
+  nanopi-r5s-rk3568 \
+  doornet1-rk3328
 
 UBOOT_CONFIGURE_VARS += USE_PRIVATE_LIBGCC=yes
 
