@@ -113,6 +113,13 @@ define U-Boot/rock-pi-e-v3-rk3328
     radxa_rock-pi-e-v3
 endef
 
+define U-Boot/doornet1-rk3328
+  $(U-Boot/rk3328/Default)
+  NAME:=DoorNet1
+  BUILD_DEVICES:= \
+    embedfire_doornet1
+endef
+
 # RK3399 boards
 
 define U-Boot/rk3399/Default
@@ -319,6 +326,7 @@ UBOOT_TARGETS := \
   rock-pi-4-rk3399 \
   rockpro64-rk3399 \
   rock-pi-s-rk3308 \
+  doornet1-rk3328 \
   nanopi-r2c-rk3328 \
   nanopi-r2c-plus-rk3328 \
   nanopi-r2s-rk3328 \

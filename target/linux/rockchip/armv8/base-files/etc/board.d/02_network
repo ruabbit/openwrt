@@ -8,6 +8,7 @@ rockchip_setup_interfaces()
 
 	case "$board" in
 	armsom,sige7|\
+	embedfire,doornet1|\
 	friendlyarm,nanopi-r2c|\
 	friendlyarm,nanopi-r2c-plus|\
 	friendlyarm,nanopi-r2s|\
@@ -50,6 +51,7 @@ rockchip_setup_macs()
 
 	case "$board" in
 	armsom,sige7|\
+	embedfire,doornet1|\
 	friendlyarm,nanopc-t6|\
 	friendlyarm,nanopi-r2c|\
 	friendlyarm,nanopi-r2s)

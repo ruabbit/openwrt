@@ -16,6 +16,16 @@ define Device/armsom_sige7
 endef
 TARGET_DEVICES += armsom_sige7
 
+define Device/embedfire_doornet1
+  DEVICE_VENDOR := EmbedFire
+  DEVICE_MODEL := DoorNet1
+  SOC := rk3328
+  DEVICE_DTS := rockchip/rk3328-doornet1
+  UBOOT_DEVICE_NAME := doornet1-rk3328
+  DEVICE_PACKAGES := kmod-usb-net-rtl8152 kmod-rtl8821cu
+endef
+TARGET_DEVICES += embedfire_doornet1
+
 define Device/firefly_roc-rk3328-cc
   DEVICE_VENDOR := Firefly
   DEVICE_MODEL := ROC-RK3328-CC
